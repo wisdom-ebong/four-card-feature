@@ -1,0 +1,243 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f0f0f0;
+    color: #333;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.header {
+    margin-bottom: 40px;
+}
+
+.header header {
+    font-size: 1.5rem;
+    color: #555;
+}
+
+.header h1 {
+    font-size: 1.5rem;
+    margin: 5px 0;
+}
+
+.header p {
+    font-size: 0.6rem;
+    color: #777;
+    width: 20%;
+    margin: auto;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    padding: 20px;
+    gap: 5px;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    width: 25%;
+    max-height: 200px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+
+}
+
+.card div {
+    width: 100%;
+    height: auto;
+    margin: 0 auto 10px;
+}
+
+.card div.cyan {
+    background-color: #00bcd4; /* Cyan */
+    width: 100%;
+    height: 10px;
+    padding: 0;
+}
+
+.card div.red {
+    background-color: #f44336; /* Red */
+    width: 100%;
+    height: 10px;
+}
+
+.card div.orange {
+    background-color: #ff9800; /* Orange */
+    width: 100%;
+    height: 10px;
+}
+
+.card div.blue {
+    background-color: #2196f3; /* Blue */
+    width: 100%;
+    height: 10px;
+}
+
+.card h3 {
+    font-size: 1.2rem;
+    margin: 10px;
+    text-align: left;
+}
+
+.card p {
+    font-size: 0.7rem;
+    color: #666;
+    margin: 10px;
+    text-align: left;
+    width: auto;
+}
+
+.card img {
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin: 20px auto;
+    margin-top: 20%;
+    position: relative;
+    left: 90px;
+} 
+
+.supervisor {
+    margin-top: 11%;
+    position: relative;
+    left: 11%;
+}
+
+.karma {
+    margin-top: 20%;
+    position: relative;
+    right: 12%;
+}
+
+.team-builder {
+    margin-top: 2%;
+    position: relative;
+    left: 13%;
+}
+
+.calculator {
+    margin-top: 11%;
+    position: relative;
+    right: 10%;
+}
+
+/* Media Queries Section*/
+
+/* For Mobile Devices */
+
+@media (min-width: 0px) and (max-width: 600px) {
+
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        min-width: 100%;
+    }
+
+    .header p {
+        min-width: 70%;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .supervisor, .karma, .team-builder, .calculator {
+        position: static;
+        margin-top: 0;
+    }
+}
+
+/* For Tablets */
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    body {
+        padding: 20px;
+    }
+
+    .container {
+        min-width: 100%;
+    }
+
+    .header p {
+        min-width: 60%;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .supervisor, .karma, .team-builder, .calculator {
+        position: static;
+        margin-top: 0;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1279px) {
+    body {
+        padding: 20px;
+    }
+
+    .container {
+        min-width: 100%;
+    }
+
+    .header p {
+        min-width: 50%;
+    }
+
+    .cards {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .card {
+        width: 45%;
+        margin-bottom: 20px;
+    }
+
+    .karma {
+        margin-top: 21%;
+    }
+
+    .team-builder {
+        margin-top: 0;
+    }
+}
